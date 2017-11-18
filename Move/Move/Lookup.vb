@@ -1,5 +1,5 @@
 ﻿Public Class Lookup
-    Protected db As db = New db
+    Protected db As New db
     Private Sub MainMenuToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MainMenuToolStripMenuItem.Click
         Main.Show()
         Me.Close()
@@ -26,6 +26,7 @@
         Me.Close()
 
     End Sub
+
     Protected Sub loadPeople()
         db.sql = "SELECT * FROM Driver ORDER BY LstName"
         db.fill(dgvLookup)
@@ -40,6 +41,18 @@
         db.bind("@driverID", txtDL.Text)
 
         db.fill(dgvLookup)
+
+    End Sub
+    Public Function getQuestionID() As Integer
+        Return getQuestionvalue("LicenseNumber")
+    End Function
+    Public Function getQuestionvalue(ByVal column As String)
+        Return dgvLookup.Item(column, dgvLookup.CurrentRow.Index).Value
+    End Function
+    Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
+        Dim UpdatePersonInfo As New UpdatePersonInfo(getQuestionID())
+        UpdatePersonInfo.ShowDialog()
+        loadPeople()
 
     End Sub
 End Class

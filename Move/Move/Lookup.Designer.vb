@@ -35,6 +35,7 @@ Partial Class Lookup
         Me.txtDL = New System.Windows.Forms.TextBox()
         Me.dgvLookup = New System.Windows.Forms.DataGridView()
         Me.btnLoad = New System.Windows.Forms.Button()
+        Me.btnUpdate = New System.Windows.Forms.Button()
         Me.msMain.SuspendLayout()
         CType(Me.dgvLookup, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -132,11 +133,21 @@ Partial Class Lookup
         Me.btnLoad.Text = "GO"
         Me.btnLoad.UseVisualStyleBackColor = True
         '
+        'btnUpdate
+        '
+        Me.btnUpdate.Location = New System.Drawing.Point(325, 43)
+        Me.btnUpdate.Name = "btnUpdate"
+        Me.btnUpdate.Size = New System.Drawing.Size(111, 23)
+        Me.btnUpdate.TabIndex = 5
+        Me.btnUpdate.Text = "Update Information"
+        Me.btnUpdate.UseVisualStyleBackColor = True
+        '
         'Lookup
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(532, 434)
+        Me.Controls.Add(Me.btnUpdate)
         Me.Controls.Add(Me.btnLoad)
         Me.Controls.Add(Me.dgvLookup)
         Me.Controls.Add(Me.txtDL)
@@ -166,4 +177,5 @@ Partial Class Lookup
     Friend WithEvents txtDL As TextBox
     Friend WithEvents dgvLookup As DataGridView
     Friend WithEvents btnLoad As Button
+    Friend WithEvents btnUpdate As Button
 End Class
