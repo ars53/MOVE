@@ -48,7 +48,7 @@ Partial Class Add
         Me.lblExp = New System.Windows.Forms.Label()
         Me.txtLType = New System.Windows.Forms.TextBox()
         Me.lblLicenseT = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.txtIns = New System.Windows.Forms.TextBox()
         Me.lblInsurance = New System.Windows.Forms.Label()
         Me.txtZip = New System.Windows.Forms.TextBox()
         Me.lblZip = New System.Windows.Forms.Label()
@@ -67,6 +67,7 @@ Partial Class Add
         Me.txtFrstN = New System.Windows.Forms.TextBox()
         Me.lblFirstN = New System.Windows.Forms.Label()
         Me.lblTitle = New System.Windows.Forms.Label()
+        Me.btnAddUser = New System.Windows.Forms.Button()
         Me.msMain.SuspendLayout()
         Me.grpInfo.SuspendLayout()
         Me.SuspendLayout()
@@ -133,6 +134,7 @@ Partial Class Add
         '
         'grpInfo
         '
+        Me.grpInfo.Controls.Add(Me.btnAddUser)
         Me.grpInfo.Controls.Add(Me.cmbGender)
         Me.grpInfo.Controls.Add(Me.lblGender)
         Me.grpInfo.Controls.Add(Me.txtEyeColor)
@@ -149,7 +151,7 @@ Partial Class Add
         Me.grpInfo.Controls.Add(Me.lblExp)
         Me.grpInfo.Controls.Add(Me.txtLType)
         Me.grpInfo.Controls.Add(Me.lblLicenseT)
-        Me.grpInfo.Controls.Add(Me.TextBox5)
+        Me.grpInfo.Controls.Add(Me.txtIns)
         Me.grpInfo.Controls.Add(Me.lblInsurance)
         Me.grpInfo.Controls.Add(Me.txtZip)
         Me.grpInfo.Controls.Add(Me.lblZip)
@@ -179,6 +181,7 @@ Partial Class Add
         Me.cmbGender.FormattingEnabled = True
         Me.cmbGender.Items.AddRange(New Object() {"M", "F"})
         Me.cmbGender.Location = New System.Drawing.Point(483, 132)
+        Me.cmbGender.MaxLength = 1
         Me.cmbGender.Name = "cmbGender"
         Me.cmbGender.Size = New System.Drawing.Size(39, 21)
         Me.cmbGender.TabIndex = 36
@@ -280,6 +283,7 @@ Partial Class Add
         'txtExp
         '
         Me.txtExp.Location = New System.Drawing.Point(224, 131)
+        Me.txtExp.MaxLength = 10
         Me.txtExp.Name = "txtExp"
         Me.txtExp.Size = New System.Drawing.Size(100, 20)
         Me.txtExp.TabIndex = 24
@@ -310,13 +314,13 @@ Partial Class Add
         Me.lblLicenseT.TabIndex = 21
         Me.lblLicenseT.Text = "License Type"
         '
-        'TextBox5
+        'txtIns
         '
-        Me.TextBox5.Location = New System.Drawing.Point(37, 132)
-        Me.TextBox5.MaxLength = 20
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox5.TabIndex = 20
+        Me.txtIns.Location = New System.Drawing.Point(37, 132)
+        Me.txtIns.MaxLength = 20
+        Me.txtIns.Name = "txtIns"
+        Me.txtIns.Size = New System.Drawing.Size(100, 20)
+        Me.txtIns.TabIndex = 20
         '
         'lblInsurance
         '
@@ -473,6 +477,15 @@ Partial Class Add
         Me.lblTitle.Text = "Please Enter the Information Below to Add a New Driver"
         Me.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'btnAddUser
+        '
+        Me.btnAddUser.Location = New System.Drawing.Point(136, 217)
+        Me.btnAddUser.Name = "btnAddUser"
+        Me.btnAddUser.Size = New System.Drawing.Size(270, 77)
+        Me.btnAddUser.TabIndex = 37
+        Me.btnAddUser.Text = "Add"
+        Me.btnAddUser.UseVisualStyleBackColor = True
+        '
         'Add
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -518,7 +531,7 @@ Partial Class Add
     Friend WithEvents lblExp As Label
     Friend WithEvents txtLType As TextBox
     Friend WithEvents lblLicenseT As Label
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents txtIns As TextBox
     Friend WithEvents lblInsurance As Label
     Friend WithEvents txtZip As TextBox
     Friend WithEvents lblZip As Label
@@ -537,4 +550,5 @@ Partial Class Add
     Friend WithEvents txtFrstN As TextBox
     Friend WithEvents lblFirstN As Label
     Friend WithEvents lblTitle As Label
+    Friend WithEvents btnAddUser As Button
 End Class
