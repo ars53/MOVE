@@ -41,7 +41,7 @@ Partial Class InsuranceAdd
         Me.txtStatus = New System.Windows.Forms.TextBox()
         Me.lblEffDate = New System.Windows.Forms.Label()
         Me.txtEffDate = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtEnd = New System.Windows.Forms.TextBox()
         Me.lblEndDate = New System.Windows.Forms.Label()
         Me.msTop.SuspendLayout()
         Me.SuspendLayout()
@@ -65,13 +65,13 @@ Partial Class InsuranceAdd
         'MainMenuToolStripMenuItem
         '
         Me.MainMenuToolStripMenuItem.Name = "MainMenuToolStripMenuItem"
-        Me.MainMenuToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.MainMenuToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
         Me.MainMenuToolStripMenuItem.Text = "Main Menu"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'LookupToolStripMenuItem
@@ -187,13 +187,13 @@ Partial Class InsuranceAdd
         Me.txtEffDate.Size = New System.Drawing.Size(100, 20)
         Me.txtEffDate.TabIndex = 10
         '
-        'TextBox1
+        'txtEnd
         '
-        Me.TextBox1.Location = New System.Drawing.Point(193, 114)
-        Me.TextBox1.MaxLength = 10
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 12
+        Me.txtEnd.Location = New System.Drawing.Point(193, 114)
+        Me.txtEnd.MaxLength = 10
+        Me.txtEnd.Name = "txtEnd"
+        Me.txtEnd.Size = New System.Drawing.Size(100, 20)
+        Me.txtEnd.TabIndex = 12
         '
         'lblEndDate
         '
@@ -209,7 +209,7 @@ Partial Class InsuranceAdd
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(470, 339)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtEnd)
         Me.Controls.Add(Me.lblEndDate)
         Me.Controls.Add(Me.txtEffDate)
         Me.Controls.Add(Me.lblEffDate)
@@ -249,6 +249,6 @@ Partial Class InsuranceAdd
     Friend WithEvents txtStatus As TextBox
     Friend WithEvents lblEffDate As Label
     Friend WithEvents txtEffDate As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtEnd As TextBox
     Friend WithEvents lblEndDate As Label
 End Class
