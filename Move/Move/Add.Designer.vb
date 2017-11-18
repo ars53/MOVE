@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Add
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Add
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.msMain = New System.Windows.Forms.MenuStrip()
         Me.MainToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -67,7 +67,6 @@ Partial Class Add
         Me.txtFrstN = New System.Windows.Forms.TextBox()
         Me.lblFirstN = New System.Windows.Forms.Label()
         Me.lblTitle = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.msMain.SuspendLayout()
         Me.grpInfo.SuspendLayout()
         Me.SuspendLayout()
@@ -134,7 +133,6 @@ Partial Class Add
         '
         'grpInfo
         '
-        Me.grpInfo.Controls.Add(Me.Button1)
         Me.grpInfo.Controls.Add(Me.cmbGender)
         Me.grpInfo.Controls.Add(Me.lblGender)
         Me.grpInfo.Controls.Add(Me.txtEyeColor)
@@ -475,15 +473,6 @@ Partial Class Add
         Me.lblTitle.Text = "Please Enter the Information Below to Add a New Driver"
         Me.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(61, 230)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 37
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'Add
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -548,5 +537,4 @@ Partial Class Add
     Friend WithEvents txtFrstN As TextBox
     Friend WithEvents lblFirstN As Label
     Friend WithEvents lblTitle As Label
-    Friend WithEvents Button1 As Button
 End Class

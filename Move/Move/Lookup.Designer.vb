@@ -31,7 +31,12 @@ Partial Class Lookup
         Me.AddToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DeleteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UpdateUserInfoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.lblLookup = New System.Windows.Forms.Label()
+        Me.txtDL = New System.Windows.Forms.TextBox()
+        Me.dgvLookup = New System.Windows.Forms.DataGridView()
+        Me.btnLoad = New System.Windows.Forms.Button()
         Me.msMain.SuspendLayout()
+        CType(Me.dgvLookup, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'msMain
@@ -39,7 +44,7 @@ Partial Class Lookup
         Me.msMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MainToolStripMenuItem, Me.LookupToolStripMenuItem, Me.AddDeleteUserToolStripMenuItem, Me.UpdateUserInfoToolStripMenuItem})
         Me.msMain.Location = New System.Drawing.Point(0, 0)
         Me.msMain.Name = "msMain"
-        Me.msMain.Size = New System.Drawing.Size(380, 24)
+        Me.msMain.Size = New System.Drawing.Size(532, 24)
         Me.msMain.TabIndex = 0
         Me.msMain.Text = "MenuStrip1"
         '
@@ -53,13 +58,13 @@ Partial Class Lookup
         'MainMenuToolStripMenuItem
         '
         Me.MainMenuToolStripMenuItem.Name = "MainMenuToolStripMenuItem"
-        Me.MainMenuToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.MainMenuToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
         Me.MainMenuToolStripMenuItem.Text = "Main Menu"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'LookupToolStripMenuItem
@@ -79,13 +84,13 @@ Partial Class Lookup
         'AddToolStripMenuItem
         '
         Me.AddToolStripMenuItem.Name = "AddToolStripMenuItem"
-        Me.AddToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AddToolStripMenuItem.Size = New System.Drawing.Size(107, 22)
         Me.AddToolStripMenuItem.Text = "Add"
         '
         'DeleteToolStripMenuItem
         '
         Me.DeleteToolStripMenuItem.Name = "DeleteToolStripMenuItem"
-        Me.DeleteToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.DeleteToolStripMenuItem.Size = New System.Drawing.Size(107, 22)
         Me.DeleteToolStripMenuItem.Text = "Delete"
         '
         'UpdateUserInfoToolStripMenuItem
@@ -94,17 +99,55 @@ Partial Class Lookup
         Me.UpdateUserInfoToolStripMenuItem.Size = New System.Drawing.Size(107, 20)
         Me.UpdateUserInfoToolStripMenuItem.Text = "Update User Info"
         '
+        'lblLookup
+        '
+        Me.lblLookup.AutoSize = True
+        Me.lblLookup.Location = New System.Drawing.Point(13, 28)
+        Me.lblLookup.Name = "lblLookup"
+        Me.lblLookup.Size = New System.Drawing.Size(143, 13)
+        Me.lblLookup.TabIndex = 1
+        Me.lblLookup.Text = "Enter Driver License Number"
+        '
+        'txtDL
+        '
+        Me.txtDL.Location = New System.Drawing.Point(13, 45)
+        Me.txtDL.Name = "txtDL"
+        Me.txtDL.Size = New System.Drawing.Size(143, 20)
+        Me.txtDL.TabIndex = 2
+        '
+        'dgvLookup
+        '
+        Me.dgvLookup.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvLookup.Location = New System.Drawing.Point(13, 81)
+        Me.dgvLookup.Name = "dgvLookup"
+        Me.dgvLookup.Size = New System.Drawing.Size(489, 341)
+        Me.dgvLookup.TabIndex = 3
+        '
+        'btnLoad
+        '
+        Me.btnLoad.Location = New System.Drawing.Point(191, 41)
+        Me.btnLoad.Name = "btnLoad"
+        Me.btnLoad.Size = New System.Drawing.Size(75, 23)
+        Me.btnLoad.TabIndex = 4
+        Me.btnLoad.Text = "GO"
+        Me.btnLoad.UseVisualStyleBackColor = True
+        '
         'Lookup
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(380, 316)
+        Me.ClientSize = New System.Drawing.Size(532, 434)
+        Me.Controls.Add(Me.btnLoad)
+        Me.Controls.Add(Me.dgvLookup)
+        Me.Controls.Add(Me.txtDL)
+        Me.Controls.Add(Me.lblLookup)
         Me.Controls.Add(Me.msMain)
         Me.MainMenuStrip = Me.msMain
         Me.Name = "Lookup"
         Me.Text = "Lookup"
         Me.msMain.ResumeLayout(False)
         Me.msMain.PerformLayout()
+        CType(Me.dgvLookup, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -119,4 +162,8 @@ Partial Class Lookup
     Friend WithEvents AddToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents DeleteToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents UpdateUserInfoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents lblLookup As Label
+    Friend WithEvents txtDL As TextBox
+    Friend WithEvents dgvLookup As DataGridView
+    Friend WithEvents btnLoad As Button
 End Class

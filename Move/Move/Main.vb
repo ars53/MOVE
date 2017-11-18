@@ -58,4 +58,9 @@
         Me.Close()
 
     End Sub
+
+    Private Sub AddInsuranceInfoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AddInsuranceInfoToolStripMenuItem.Click
+        InsuranceAdd.Show()
+        Me.Close()
+    End Sub
 End Class
