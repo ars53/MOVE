@@ -6,4 +6,9 @@
         db.bind("@driver_ID", txtID.Text)
         db.fill(dgvPersonLookup)
     End Sub
+
+    Private Sub btnViewInfractions_Click(sender As Object, e As EventArgs) Handles btnViewInfractions.Click
+        ViewInfractions.ShowDialog()
+
+    End Sub
 End Class

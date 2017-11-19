@@ -29,6 +29,7 @@ Partial Class LookupbyLicensePlate
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MainMenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.btnWrite = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -76,20 +77,30 @@ Partial Class LookupbyLicensePlate
         'MainMenuToolStripMenuItem
         '
         Me.MainMenuToolStripMenuItem.Name = "MainMenuToolStripMenuItem"
-        Me.MainMenuToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.MainMenuToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
         Me.MainMenuToolStripMenuItem.Text = "Main Menu"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
         Me.ExitToolStripMenuItem.Text = "&Exit"
+        '
+        'btnWrite
+        '
+        Me.btnWrite.Location = New System.Drawing.Point(16, 97)
+        Me.btnWrite.Name = "btnWrite"
+        Me.btnWrite.Size = New System.Drawing.Size(207, 40)
+        Me.btnWrite.TabIndex = 4
+        Me.btnWrite.Text = "Write Ticket"
+        Me.btnWrite.UseVisualStyleBackColor = True
         '
         'LookupbyLicensePlate
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(268, 177)
+        Me.Controls.Add(Me.btnWrite)
         Me.Controls.Add(Me.btnSearch)
         Me.Controls.Add(Me.txtPlate)
         Me.Controls.Add(Me.lblLicensePlate)
@@ -111,4 +122,5 @@ Partial Class LookupbyLicensePlate
     Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents MainMenuToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents btnWrite As Button
 End Class

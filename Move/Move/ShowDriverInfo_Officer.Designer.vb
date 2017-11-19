@@ -26,6 +26,7 @@ Partial Class ShowDriverInfo_Officer
         Me.lblPrompt = New System.Windows.Forms.Label()
         Me.txtID = New System.Windows.Forms.TextBox()
         Me.btnSearch = New System.Windows.Forms.Button()
+        Me.btnViewInfractions = New System.Windows.Forms.Button()
         CType(Me.dgvPersonLookup, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -62,11 +63,21 @@ Partial Class ShowDriverInfo_Officer
         Me.btnSearch.Text = "Search"
         Me.btnSearch.UseVisualStyleBackColor = True
         '
+        'btnViewInfractions
+        '
+        Me.btnViewInfractions.Location = New System.Drawing.Point(296, 10)
+        Me.btnViewInfractions.Name = "btnViewInfractions"
+        Me.btnViewInfractions.Size = New System.Drawing.Size(109, 23)
+        Me.btnViewInfractions.TabIndex = 4
+        Me.btnViewInfractions.Text = "See Infractions"
+        Me.btnViewInfractions.UseVisualStyleBackColor = True
+        '
         'ShowDriverInfo_Officer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(971, 409)
+        Me.Controls.Add(Me.btnViewInfractions)
         Me.Controls.Add(Me.btnSearch)
         Me.Controls.Add(Me.txtID)
         Me.Controls.Add(Me.lblPrompt)
@@ -83,4 +94,5 @@ Partial Class ShowDriverInfo_Officer
     Friend WithEvents lblPrompt As Label
     Friend WithEvents txtID As TextBox
     Friend WithEvents btnSearch As Button
+    Friend WithEvents btnViewInfractions As Button
 End Class

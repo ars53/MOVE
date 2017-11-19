@@ -16,4 +16,8 @@
 
     End Sub
 
+    Private Sub btnWrite_Click(sender As Object, e As EventArgs) Handles btnWrite.Click
+        WriteInfraction.ShowDialog()
+
+    End Sub
 End Class

@@ -173,6 +173,18 @@
     <Compile Include="VehicleLookup.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ViewInfractions.Designer.vb">
+      <DependentUpon>ViewInfractions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewInfractions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WriteInfraction.Designer.vb">
+      <DependentUpon>WriteInfraction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WriteInfraction.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Add.resx">
@@ -222,6 +234,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="VehicleLookup.resx">
       <DependentUpon>VehicleLookup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewInfractions.resx">
+      <DependentUpon>ViewInfractions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WriteInfraction.resx">
+      <DependentUpon>WriteInfraction.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
