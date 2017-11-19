@@ -8,7 +8,7 @@
 
     End Sub
 
-    Private Sub LookupToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LookupToolStripMenuItem.Click
+    Private Sub LookupToolStripMenuItem_Click(sender As Object, e As EventArgs)
         Lookup.Show()
         Me.Close()
 
@@ -36,7 +36,7 @@
 
     End Sub
 
-    Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+    Private Sub btnAdd_Click(sender As Object, e As EventArgs)
         Add.ShowDialog()
 
     End Sub
@@ -76,5 +76,11 @@
     Private Sub btnLookupCars_Click(sender As Object, e As EventArgs) Handles btnLookupCars.Click
         VehicleLookup.Show()
         Me.Close()
+    End Sub
+
+    Private Sub btnOfficer_Click(sender As Object, e As EventArgs) Handles btnOfficer.Click
+        LookupbyLicensePlate.Show()
+        Me.Close()
+
     End Sub
 End Class

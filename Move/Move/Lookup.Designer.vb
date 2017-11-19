@@ -36,13 +36,14 @@ Partial Class Lookup
         Me.dgvLookup = New System.Windows.Forms.DataGridView()
         Me.btnLoad = New System.Windows.Forms.Button()
         Me.btnUpdate = New System.Windows.Forms.Button()
+        Me.DeleteUserToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.msMain.SuspendLayout()
         CType(Me.dgvLookup, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'msMain
         '
-        Me.msMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MainToolStripMenuItem, Me.LookupToolStripMenuItem, Me.AddDeleteUserToolStripMenuItem, Me.UpdateUserInfoToolStripMenuItem})
+        Me.msMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MainToolStripMenuItem, Me.LookupToolStripMenuItem, Me.AddDeleteUserToolStripMenuItem, Me.UpdateUserInfoToolStripMenuItem, Me.DeleteUserToolStripMenuItem})
         Me.msMain.Location = New System.Drawing.Point(0, 0)
         Me.msMain.Name = "msMain"
         Me.msMain.Size = New System.Drawing.Size(532, 24)
@@ -142,6 +143,12 @@ Partial Class Lookup
         Me.btnUpdate.Text = "Update Information"
         Me.btnUpdate.UseVisualStyleBackColor = True
         '
+        'DeleteUserToolStripMenuItem
+        '
+        Me.DeleteUserToolStripMenuItem.Name = "DeleteUserToolStripMenuItem"
+        Me.DeleteUserToolStripMenuItem.Size = New System.Drawing.Size(78, 20)
+        Me.DeleteUserToolStripMenuItem.Text = "Delete User"
+        '
         'Lookup
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -178,4 +185,5 @@ Partial Class Lookup
     Friend WithEvents dgvLookup As DataGridView
     Friend WithEvents btnLoad As Button
     Friend WithEvents btnUpdate As Button
+    Friend WithEvents DeleteUserToolStripMenuItem As ToolStripMenuItem
 End Class

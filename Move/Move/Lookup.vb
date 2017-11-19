@@ -55,4 +55,18 @@
         loadPeople()
 
     End Sub
+
+    Private Sub DeleteUserToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DeleteUserToolStripMenuItem.Click
+        Dim confirm As Integer = MessageBox.Show("Are you sure you want to delete this user, it will delete all vehicle associations and the user profile", "Delete Confirmation", MessageBoxButtons.YesNoCancel)
+        If confirm = DialogResult.Yes Then
+            db.sql = "DELETE FROM Driver_Vehicle_Asc WHERE LicenseNumber = @driver_ID"
+            db.bind("@driver_ID", getPersonID())
+            db.execute()
+            db.sql = "Delete from Driver Where LicenseNumber = @driver_ID"
+            db.bind("@driver_ID", getPersonID())
+            db.execute()
+            loadPeople()
+
+        End If
+    End Sub
 End Class
