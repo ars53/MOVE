@@ -135,7 +135,7 @@ Partial Class Lookup
         '
         'btnUpdate
         '
-        Me.btnUpdate.Location = New System.Drawing.Point(325, 43)
+        Me.btnUpdate.Location = New System.Drawing.Point(281, 42)
         Me.btnUpdate.Name = "btnUpdate"
         Me.btnUpdate.Size = New System.Drawing.Size(111, 23)
         Me.btnUpdate.TabIndex = 5

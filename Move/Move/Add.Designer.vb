@@ -22,16 +22,8 @@ Partial Class Add
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.msMain = New System.Windows.Forms.MenuStrip()
-        Me.MainToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MainMenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LookupToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AddDeleteUserToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AddToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DeleteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.UpdateUserInfoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.grpInfo = New System.Windows.Forms.GroupBox()
+        Me.btnAddUser = New System.Windows.Forms.Button()
         Me.cmbGender = New System.Windows.Forms.ComboBox()
         Me.lblGender = New System.Windows.Forms.Label()
         Me.txtEyeColor = New System.Windows.Forms.TextBox()
@@ -67,70 +59,8 @@ Partial Class Add
         Me.txtFrstN = New System.Windows.Forms.TextBox()
         Me.lblFirstN = New System.Windows.Forms.Label()
         Me.lblTitle = New System.Windows.Forms.Label()
-        Me.btnAddUser = New System.Windows.Forms.Button()
-        Me.msMain.SuspendLayout()
         Me.grpInfo.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'msMain
-        '
-        Me.msMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MainToolStripMenuItem, Me.LookupToolStripMenuItem, Me.AddDeleteUserToolStripMenuItem, Me.UpdateUserInfoToolStripMenuItem})
-        Me.msMain.Location = New System.Drawing.Point(0, 0)
-        Me.msMain.Name = "msMain"
-        Me.msMain.Size = New System.Drawing.Size(598, 24)
-        Me.msMain.TabIndex = 1
-        Me.msMain.Text = "MenuStrip1"
-        '
-        'MainToolStripMenuItem
-        '
-        Me.MainToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MainMenuToolStripMenuItem, Me.ExitToolStripMenuItem})
-        Me.MainToolStripMenuItem.Name = "MainToolStripMenuItem"
-        Me.MainToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
-        Me.MainToolStripMenuItem.Text = "File"
-        '
-        'MainMenuToolStripMenuItem
-        '
-        Me.MainMenuToolStripMenuItem.Name = "MainMenuToolStripMenuItem"
-        Me.MainMenuToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
-        Me.MainMenuToolStripMenuItem.Text = "Main Menu"
-        '
-        'ExitToolStripMenuItem
-        '
-        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(135, 22)
-        Me.ExitToolStripMenuItem.Text = "Exit"
-        '
-        'LookupToolStripMenuItem
-        '
-        Me.LookupToolStripMenuItem.Name = "LookupToolStripMenuItem"
-        Me.LookupToolStripMenuItem.Size = New System.Drawing.Size(59, 20)
-        Me.LookupToolStripMenuItem.Text = "Lookup"
-        '
-        'AddDeleteUserToolStripMenuItem
-        '
-        Me.AddDeleteUserToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddToolStripMenuItem, Me.DeleteToolStripMenuItem})
-        Me.AddDeleteUserToolStripMenuItem.Name = "AddDeleteUserToolStripMenuItem"
-        Me.AddDeleteUserToolStripMenuItem.Size = New System.Drawing.Size(105, 20)
-        Me.AddDeleteUserToolStripMenuItem.Text = "Add/Delete User"
-        '
-        'AddToolStripMenuItem
-        '
-        Me.AddToolStripMenuItem.Enabled = False
-        Me.AddToolStripMenuItem.Name = "AddToolStripMenuItem"
-        Me.AddToolStripMenuItem.Size = New System.Drawing.Size(107, 22)
-        Me.AddToolStripMenuItem.Text = "Add"
-        '
-        'DeleteToolStripMenuItem
-        '
-        Me.DeleteToolStripMenuItem.Name = "DeleteToolStripMenuItem"
-        Me.DeleteToolStripMenuItem.Size = New System.Drawing.Size(107, 22)
-        Me.DeleteToolStripMenuItem.Text = "Delete"
-        '
-        'UpdateUserInfoToolStripMenuItem
-        '
-        Me.UpdateUserInfoToolStripMenuItem.Name = "UpdateUserInfoToolStripMenuItem"
-        Me.UpdateUserInfoToolStripMenuItem.Size = New System.Drawing.Size(107, 20)
-        Me.UpdateUserInfoToolStripMenuItem.Text = "Update User Info"
         '
         'grpInfo
         '
@@ -175,6 +105,15 @@ Partial Class Add
         Me.grpInfo.TabIndex = 7
         Me.grpInfo.TabStop = False
         Me.grpInfo.Text = "Driver Info"
+        '
+        'btnAddUser
+        '
+        Me.btnAddUser.Location = New System.Drawing.Point(136, 217)
+        Me.btnAddUser.Name = "btnAddUser"
+        Me.btnAddUser.Size = New System.Drawing.Size(270, 77)
+        Me.btnAddUser.TabIndex = 37
+        Me.btnAddUser.Text = "Add"
+        Me.btnAddUser.UseVisualStyleBackColor = True
         '
         'cmbGender
         '
@@ -477,15 +416,6 @@ Partial Class Add
         Me.lblTitle.Text = "Please Enter the Information Below to Add a New Driver"
         Me.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'btnAddUser
-        '
-        Me.btnAddUser.Location = New System.Drawing.Point(136, 217)
-        Me.btnAddUser.Name = "btnAddUser"
-        Me.btnAddUser.Size = New System.Drawing.Size(270, 77)
-        Me.btnAddUser.TabIndex = 37
-        Me.btnAddUser.Text = "Add"
-        Me.btnAddUser.UseVisualStyleBackColor = True
-        '
         'Add
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -493,27 +423,13 @@ Partial Class Add
         Me.ClientSize = New System.Drawing.Size(598, 434)
         Me.Controls.Add(Me.grpInfo)
         Me.Controls.Add(Me.lblTitle)
-        Me.Controls.Add(Me.msMain)
         Me.Name = "Add"
         Me.Text = "Add"
-        Me.msMain.ResumeLayout(False)
-        Me.msMain.PerformLayout()
         Me.grpInfo.ResumeLayout(False)
         Me.grpInfo.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents msMain As MenuStrip
-    Friend WithEvents MainToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents MainMenuToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents LookupToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents AddDeleteUserToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents AddToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents DeleteToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents UpdateUserInfoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents grpInfo As GroupBox
     Friend WithEvents cmbGender As ComboBox
     Friend WithEvents lblGender As Label

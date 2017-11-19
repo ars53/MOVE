@@ -28,26 +28,24 @@ Partial Class Main
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LookupToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AddDeleteUserToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AddToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DeleteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.UpdateUserInfoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AddUserToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AddInsuranceInfoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.lblTitle = New System.Windows.Forms.Label()
         Me.lblPrompt = New System.Windows.Forms.Label()
         Me.btnLookup = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
-        Me.btnDelete = New System.Windows.Forms.Button()
-        Me.btnUpdate = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
-        Me.AddInsuranceInfoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.btnIns = New System.Windows.Forms.Button()
+        Me.btnLookupCars = New System.Windows.Forms.Button()
         Me.msTop.SuspendLayout()
         Me.SuspendLayout()
         '
         'msTop
         '
-        Me.msTop.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.LookupToolStripMenuItem, Me.AddDeleteUserToolStripMenuItem, Me.UpdateUserInfoToolStripMenuItem, Me.AddInsuranceInfoToolStripMenuItem})
+        Me.msTop.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.LookupToolStripMenuItem, Me.AddDeleteUserToolStripMenuItem, Me.AddInsuranceInfoToolStripMenuItem})
         Me.msTop.Location = New System.Drawing.Point(0, 0)
         Me.msTop.Name = "msTop"
-        Me.msTop.Size = New System.Drawing.Size(465, 24)
+        Me.msTop.Size = New System.Drawing.Size(485, 24)
         Me.msTop.TabIndex = 0
         Me.msTop.Text = "MenuStrip1"
         '
@@ -79,28 +77,22 @@ Partial Class Main
         '
         'AddDeleteUserToolStripMenuItem
         '
-        Me.AddDeleteUserToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddToolStripMenuItem, Me.DeleteToolStripMenuItem})
+        Me.AddDeleteUserToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddUserToolStripMenuItem})
         Me.AddDeleteUserToolStripMenuItem.Name = "AddDeleteUserToolStripMenuItem"
-        Me.AddDeleteUserToolStripMenuItem.Size = New System.Drawing.Size(105, 20)
-        Me.AddDeleteUserToolStripMenuItem.Text = "Add/Delete User"
+        Me.AddDeleteUserToolStripMenuItem.Size = New System.Drawing.Size(66, 20)
+        Me.AddDeleteUserToolStripMenuItem.Text = "User Info"
         '
-        'AddToolStripMenuItem
+        'AddUserToolStripMenuItem
         '
-        Me.AddToolStripMenuItem.Name = "AddToolStripMenuItem"
-        Me.AddToolStripMenuItem.Size = New System.Drawing.Size(107, 22)
-        Me.AddToolStripMenuItem.Text = "Add"
+        Me.AddUserToolStripMenuItem.Name = "AddUserToolStripMenuItem"
+        Me.AddUserToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
+        Me.AddUserToolStripMenuItem.Text = "Add User"
         '
-        'DeleteToolStripMenuItem
+        'AddInsuranceInfoToolStripMenuItem
         '
-        Me.DeleteToolStripMenuItem.Name = "DeleteToolStripMenuItem"
-        Me.DeleteToolStripMenuItem.Size = New System.Drawing.Size(107, 22)
-        Me.DeleteToolStripMenuItem.Text = "Delete"
-        '
-        'UpdateUserInfoToolStripMenuItem
-        '
-        Me.UpdateUserInfoToolStripMenuItem.Name = "UpdateUserInfoToolStripMenuItem"
-        Me.UpdateUserInfoToolStripMenuItem.Size = New System.Drawing.Size(107, 20)
-        Me.UpdateUserInfoToolStripMenuItem.Text = "Update User Info"
+        Me.AddInsuranceInfoToolStripMenuItem.Name = "AddInsuranceInfoToolStripMenuItem"
+        Me.AddInsuranceInfoToolStripMenuItem.Size = New System.Drawing.Size(119, 20)
+        Me.AddInsuranceInfoToolStripMenuItem.Text = "Add Insurance Info"
         '
         'lblTitle
         '
@@ -123,7 +115,7 @@ Partial Class Main
         '
         'btnLookup
         '
-        Me.btnLookup.Location = New System.Drawing.Point(46, 233)
+        Me.btnLookup.Location = New System.Drawing.Point(17, 233)
         Me.btnLookup.Name = "btnLookup"
         Me.btnLookup.Size = New System.Drawing.Size(85, 23)
         Me.btnLookup.TabIndex = 3
@@ -132,30 +124,12 @@ Partial Class Main
         '
         'btnAdd
         '
-        Me.btnAdd.Location = New System.Drawing.Point(137, 233)
+        Me.btnAdd.Location = New System.Drawing.Point(108, 233)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(75, 23)
         Me.btnAdd.TabIndex = 4
         Me.btnAdd.Text = "&Add a User"
         Me.btnAdd.UseVisualStyleBackColor = True
-        '
-        'btnDelete
-        '
-        Me.btnDelete.Location = New System.Drawing.Point(218, 233)
-        Me.btnDelete.Name = "btnDelete"
-        Me.btnDelete.Size = New System.Drawing.Size(89, 23)
-        Me.btnDelete.TabIndex = 5
-        Me.btnDelete.Text = "&Delete A User"
-        Me.btnDelete.UseVisualStyleBackColor = True
-        '
-        'btnUpdate
-        '
-        Me.btnUpdate.Location = New System.Drawing.Point(313, 233)
-        Me.btnUpdate.Name = "btnUpdate"
-        Me.btnUpdate.Size = New System.Drawing.Size(75, 23)
-        Me.btnUpdate.TabIndex = 6
-        Me.btnUpdate.Text = "&Update Information"
-        Me.btnUpdate.UseVisualStyleBackColor = True
         '
         'btnExit
         '
@@ -166,20 +140,32 @@ Partial Class Main
         Me.btnExit.Text = "&Quit"
         Me.btnExit.UseVisualStyleBackColor = True
         '
-        'AddInsuranceInfoToolStripMenuItem
+        'btnIns
         '
-        Me.AddInsuranceInfoToolStripMenuItem.Name = "AddInsuranceInfoToolStripMenuItem"
-        Me.AddInsuranceInfoToolStripMenuItem.Size = New System.Drawing.Size(119, 20)
-        Me.AddInsuranceInfoToolStripMenuItem.Text = "Add Insurance Info"
+        Me.btnIns.Location = New System.Drawing.Point(189, 233)
+        Me.btnIns.Name = "btnIns"
+        Me.btnIns.Size = New System.Drawing.Size(120, 23)
+        Me.btnIns.TabIndex = 8
+        Me.btnIns.Text = "Add Insurance Info"
+        Me.btnIns.UseVisualStyleBackColor = True
+        '
+        'btnLookupCars
+        '
+        Me.btnLookupCars.Location = New System.Drawing.Point(315, 233)
+        Me.btnLookupCars.Name = "btnLookupCars"
+        Me.btnLookupCars.Size = New System.Drawing.Size(150, 23)
+        Me.btnLookupCars.TabIndex = 9
+        Me.btnLookupCars.Text = "Lookup Vehicle Information"
+        Me.btnLookupCars.UseVisualStyleBackColor = True
         '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(465, 347)
+        Me.ClientSize = New System.Drawing.Size(485, 347)
+        Me.Controls.Add(Me.btnLookupCars)
+        Me.Controls.Add(Me.btnIns)
         Me.Controls.Add(Me.btnExit)
-        Me.Controls.Add(Me.btnUpdate)
-        Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.btnLookup)
         Me.Controls.Add(Me.lblPrompt)
@@ -201,15 +187,13 @@ Partial Class Main
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents LookupToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AddDeleteUserToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents UpdateUserInfoToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents AddToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents DeleteToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents lblTitle As Label
     Friend WithEvents lblPrompt As Label
     Friend WithEvents btnLookup As Button
     Friend WithEvents btnAdd As Button
-    Friend WithEvents btnDelete As Button
-    Friend WithEvents btnUpdate As Button
     Friend WithEvents btnExit As Button
     Friend WithEvents AddInsuranceInfoToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents btnIns As Button
+    Friend WithEvents AddUserToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents btnLookupCars As Button
 End Class

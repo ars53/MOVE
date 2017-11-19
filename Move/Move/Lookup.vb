@@ -43,14 +43,14 @@
         db.fill(dgvLookup)
 
     End Sub
-    Public Function getQuestionID() As Integer
-        Return getQuestionvalue("LicenseNumber")
+    Public Function getPersonID() As Integer
+        Return getPersonvalue("LicenseNumber")
     End Function
-    Public Function getQuestionvalue(ByVal column As String)
+    Public Function getPersonvalue(ByVal column As String)
         Return dgvLookup.Item(column, dgvLookup.CurrentRow.Index).Value
     End Function
     Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
-        Dim UpdatePersonInfo As New UpdatePersonInfo(getQuestionID())
+        Dim UpdatePersonInfo As New UpdatePersonInfo(getPersonID())
         UpdatePersonInfo.ShowDialog()
         loadPeople()
 
