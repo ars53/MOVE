@@ -2,7 +2,7 @@
 
 Public Class db
     ' login to database server
-    Protected connection As New SqlConnection With {.ConnectionString = "Server=essql1.walton.uark.edu;Database=isys4283F1715;Trusted_Connection=yes;"}
+    Protected connection As New SqlConnection With {.ConnectionString = "Server=essql1.walton.uark.edu;Database=isys4283_lpr;Trusted_Connection=yes;"}
     ' prepare a query
     Protected command As New SqlCommand With {.Connection = connection}
 
