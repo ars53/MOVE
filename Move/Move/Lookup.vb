@@ -10,8 +10,9 @@
     End Sub
 
     Private Sub AddToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AddToolStripMenuItem.Click
-        Add.Show()
-        Me.Close()
+        Add.ShowDialog()
+        loadPeople()
+
 
     End Sub
 
