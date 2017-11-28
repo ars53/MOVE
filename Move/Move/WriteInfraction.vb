@@ -1,8 +1,8 @@
 ﻿Public Class WriteInfraction
     Protected db As db = New db
     Private Sub btnSubmit_Click(sender As Object, e As EventArgs) Handles btnSubmit.Click
-        db.sql = "INSERT INTO Infractions (Description, Date_of_Issue, Officer_ID, Address, City, State, County, Zipcode, Driver_ID, VIN) VALUES (@describe, @date, @offID, @address, @city, @state, @county, @zip, @driver_id, @vin)"
-        db.bind("@describe", txtDescription.Text)
+        db.sql = "INSERT INTO Infractions (Description, Date_of_Issue, Officer_ID, Address, City, State, County, Zipcode, Driver_ID, VIN) VALUES (@describe1, @date, @offID, @address, @city, @state, @county, @zip, @driver_id, @vin)"
+        db.bind("@describe1", txtDescription.Text)
         db.bind("@date", txtDate.Text)
         db.bind("@offID", txtOfficerId.Text)
         db.bind("@address", txtAddress.Text)

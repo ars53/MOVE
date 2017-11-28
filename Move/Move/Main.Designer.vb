@@ -78,7 +78,7 @@ Partial Class Main
         'AddUserToolStripMenuItem
         '
         Me.AddUserToolStripMenuItem.Name = "AddUserToolStripMenuItem"
-        Me.AddUserToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AddUserToolStripMenuItem.Size = New System.Drawing.Size(122, 22)
         Me.AddUserToolStripMenuItem.Text = "Add User"
         '
         'AddInsuranceInfoToolStripMenuItem

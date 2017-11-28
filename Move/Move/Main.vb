@@ -83,4 +83,9 @@
         Me.Close()
 
     End Sub
+
+    Private Sub btnIns_Click(sender As Object, e As EventArgs) Handles btnIns.Click
+        InsuranceAdd.ShowDialog()
+
+    End Sub
 End Class
