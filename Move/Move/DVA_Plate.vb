@@ -8,7 +8,7 @@
         Return dgvPlateLookup.Item(column, dgvPlateLookup.CurrentRow.Index).Value
     End Function
     Private Sub DVA_Plate_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        db.sql = "SELECT dva.licenseNumber, CONCAT(D.FrsName,' ', d.LstName) AS Driver_Name, v.PlateNumber FROM Driver_Vehicle_Asc dva JOIN Vehicle v on dva.VIN = v.VIN JOIN Driver d on Dva.LicenseNumber = d.licenseNumber WHERE v.plateNumber = @Plate"
+        db.sql = "SELECT dva.licenseNumber,dva.VIN, CONCAT(D.FrsName,' ', d.LstName) AS Driver_Name, v.PlateNumber FROM Driver_Vehicle_Asc dva JOIN Vehicle v on dva.VIN = v.VIN JOIN Driver d on Dva.LicenseNumber = d.licenseNumber WHERE v.plateNumber = @Plate"
         db.bind("@Plate", LPlate)
         db.fill(dgvPlateLookup)
     End Sub
